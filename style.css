@@ -18,6 +18,10 @@ ul {
   list-style: none;
 }
 
+p {
+  text-align: center;
+}
+
 h5 {
   cursor: default;
   position: absolute;
