@@ -11,7 +11,7 @@ if (minutes < 10) {
 }
 
 let dayIndex = currentTime.getDay();
-let days = ["Sunday", "Momday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = days[dayIndex];
 
 let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
