@@ -1,146 +1,137 @@
-@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+h1,
+h3 {
+  display: block;
+  text-align: center;
 }
 
 h1 {
-  margin: 0;
+  padding-top: 10px;
+  font-size: 30px !important;
 }
 
-img {
-  width: 80px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-p {
-  text-align: center;
-}
-
-h5 {
-  cursor: default;
-  position: absolute;
-  width: 90%;
-  height: 90px;
-  font-size: 10px;
-  font-family: "Luckiest Guy", cursive;
-}
-
-h5 span {
-  position: relative;
-  top: 20px;
+h2,
+h4,
+h2 i {
   display: inline-block;
-  -webkit-animation: bounce 0.3s ease infinite alternate;
-  font-size: 30px;
-  color: #fff;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
-    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-h5 span:nth-child(2) {
-  -webkit-animation-delay: 0.1s;
+h2,
+h5 {
+  font-size: 20px !important;
 }
 
-h5 span:nth-child(3) {
-  -webkit-animation-delay: 0.2s;
+h2 i {
+  font-size: 18px;
 }
 
-h5 span:nth-child(4) {
-  -webkit-animation-delay: 0.3s;
+h3 {
+  font-size: 18px !important;
 }
 
-h5 span:nth-child(5) {
-  -webkit-animation-delay: 0.4s;
+h4 {
+  font-size: 62px !important;
+  padding-left: 43px;
 }
 
-h5 span:nth-child(6) {
-  -webkit-animation-delay: 0.5s;
+p a {
+  color: #634cff;
+  text-decoration: none;
+  transition: all 2ms ease-in-out;
 }
 
-h5 span:nth-child(7) {
-  -webkit-animation-delay: 0.6s;
+hr {
+  color: #1b115f !important;
+  height: 2px !important;
+  width: 80%;
 }
 
-@-webkit-keyframes bounce {
-  100% {
-    top: -10px;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
-      0 50px 25px rgba(0, 0, 0, 0.2);
-  }
-}
-
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 3%;
-  height: 0;
-  margin: auto;
-  border-radius: 100%;
-  background: transparent;
-  display: block;
-  box-shadow: 0 0 150px 100px rgba(255, 255, 255, 0.6),
-    200px 0 200px 150px rgba(255, 255, 255, 0.6),
-    -250px 0 300px 150px rgba(255, 255, 255, 0.6),
-    550px 0 300px 200px rgba(255, 255, 255, 0.6),
-    -550px 0 300px 200px rgba(255, 255, 255, 0.6);
+.city-name,
+h4,
+small p {
+  text-align: center;
 }
 
 .weather-app {
-  border: 2px solid;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
+  max-width: 400px;
+  margin: 100px auto;
+  font-family: "Lexend Deca", sans-serif;
   border-radius: 5px;
-
-  background-color: skyblue;
-  background-image: -webkit-linear-gradient(90deg, skyblue 0%, steelblue 100%);
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  overflow: hidden;
-  -webkit-font-smoothing: antialiased;
+  background-color: #98c4e7;
+  box-shadow: 0 0 40px rgba(109, 103, 103, 0.637);
 }
 
-.currentTemp {
-  font-size: 50px;
-  font-weight: 500px;
+.search-bar {
+  width: 90%;
+  margin: 20px;
+  padding-top: 10px;
+  border: none;
 }
 
-.units {
-  position: relative;
-  top: -26px;
-  right: -15px;
+.current-btn,
+.search-btn {
+  margin-left: 10px !important;
 }
 
-hr.rounded {
-  border-top: 6px solid #f3ebeb;
-  border-radius: 5px;
+.btn:hover {
+  background: #634cff !important;
+  color: white !important;
+  border: white !important;
 }
 
-p {
-  font-size: 15px;
-  font-weight: bold;
+.weather-now {
+  color: white;
 }
 
-.forecast-week {
-  text-align: center;
+.weather-future {
+  background: rgb(243, 195, 91);
+  color: black;
 }
 
-.forecast-icon {
-  width: 50px;
+.weather-now-icon {
   display: block;
   margin: 0 auto;
+  width: 100px;
 }
 
-.forecast-temp {
-  font-size: 16px;
+.weather-decription {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.current-temps p {
   text-align: center;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.max-temp {
+  position: relative;
+  right: 15px;
+}
+
+.details p {
+  margin: 0;
+}
+
+.dates p,
+.future-temperatures p,
+.weather-decription {
+  display: block;
+  text-align: center;
+}
+
+.future-temperatures p {
+  font-size: 15px;
+}
+
+.weather-icon {
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  bottom: 10px;
+}
+
+.current-location {
+  font-size: 8px;
 }
