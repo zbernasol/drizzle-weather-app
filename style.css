@@ -37,6 +37,7 @@ p a {
   color: #392d83;
   text-decoration: none;
   transition: all 2ms ease-in-out;
+  text-align: center;
 }
 
 hr {
