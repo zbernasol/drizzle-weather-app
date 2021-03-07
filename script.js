@@ -119,7 +119,7 @@ document.querySelector("#min-temp").innerHTML = (`${Math.round(response.data.mai
 document.querySelector("#max-temp").innerHTML = (`${Math.round(response.data.main.temp_max)}°C`);
 document.querySelector("#feels-like").innerHTML = (`${Math.round(response.data.main.feels_like)}°C`);
 document.querySelector("#humidity").innerHTML = (`${Math.round(response.data.main.humidity)}%`);
-document.querySelector("#wind-speed").innerHTML = (`${Math.round(response.data.wind.speed)} #`);
+document.querySelector("#wind-speed").innerHTML = (`${Math.round(response.data.wind.speed)} m/s`);
 document.querySelector("#description").innerHTML =response.data.weather[0].description;
 document.querySelector("#weather-icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 document.querySelector("#weather-icon").setAttribute("alt", response.data.weather[0].description);
