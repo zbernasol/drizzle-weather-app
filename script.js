@@ -120,9 +120,9 @@ temperatureElement.innerHTML = Math.round (celciusTemperature);
 
 document.querySelector("#date").innerHTML = formatCurrentDate(response.data.dt*1000);  
 document.querySelector("#city").innerHTML = response.data.name;
-document.querySelector("#min-temp").innerHTML = (`${Math.round(response.data.main.temp_min)}°C`);
-document.querySelector("#max-temp").innerHTML = (`${Math.round(response.data.main.temp_max)}°C`);
-document.querySelector("#feels-like").innerHTML = (`${Math.round(response.data.main.feels_like)}°C`);
+document.querySelector("#min-temp").innerHTML = (`${Math.round(response.data.main.temp_min)}°`);
+document.querySelector("#max-temp").innerHTML = (`${Math.round(response.data.main.temp_max)}°`);
+document.querySelector("#feels-like").innerHTML = (`${Math.round(response.data.main.feels_like)}°`);
 document.querySelector("#humidity").innerHTML = (`${Math.round(response.data.main.humidity)}%`);
 document.querySelector("#wind-speed").innerHTML = (`${Math.round(response.data.wind.speed)}m/s`);
 document.querySelector("#description").innerHTML =response.data.weather[0].description;
