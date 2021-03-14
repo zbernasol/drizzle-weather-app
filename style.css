@@ -46,6 +46,10 @@ hr {
   width: 80%;
 }
 
+.container p {
+  top: -30px;
+}
+
 .city-name,
 h4,
 small p {
