@@ -88,6 +88,11 @@ small p {
   top: -34px;
 }
 
+span a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .temp-units .active {
   cursor: default;
   color: rgba(109, 103, 103, 0.637);
