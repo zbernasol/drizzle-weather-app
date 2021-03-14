@@ -33,10 +33,6 @@ h4 {
   padding-left: 43px;
 }
 
-p {
-  color: #fff;
-}
-
 p a {
   color: #ffffff;
   text-decoration: none;
@@ -155,4 +151,8 @@ span a {
 
 .current-location {
   font-size: 8px;
+}
+
+.open-source {
+  color: #fff;
 }
