@@ -144,5 +144,21 @@ axios.get(apiUrl).then(displayForecast);
 let currentButton = document.querySelector("#current-location");
 currentButton.addEventListener("click",showCurrentPosition);
 
+function displayCelciusTemperature (event) {
+  event.preventDefault();
+  celciusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let tempElement = document.querySelector ("#now-temp");
+  tempElement.innerHTML = Math.round(response.data.main.temp)
+}
+
+
+
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener ("click", displayFahrenheitTemperature);
+
+let celciusLink = document.querySelector ("#celcius-link");
+celciusLink.addEventListener("click", displayCelciusTemperature);
 
 searchCity("Toronto");
