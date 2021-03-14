@@ -30,7 +30,7 @@ h3 {
 
 h4 {
   font-size: 62px !important;
-  padding-left: 43px;
+  padding-left: 45px;
 }
 
 p a {
@@ -73,7 +73,7 @@ small p {
 }
 
 .btn:hover {
-  background: #392d83 !important;
+  background: #1076a5 !important;
   color: white !important;
   border: white !important;
 }
