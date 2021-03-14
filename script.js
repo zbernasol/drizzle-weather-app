@@ -32,7 +32,7 @@ formatHour.innerHTML = formatHours(new Date());
 function displayForecast(response) {
   let forecastElement = document.querySelector ("#forecast");
   let forecast= response.data.list;
-  forecastElement.innerHTML = `
+  forecastElement.innerHTML = ` 3-Hour Forecast
    <div class="row dates">
    <div class="col">
       <p>${formatHours(forecast[0].dt*1000)}</p>
