@@ -114,7 +114,7 @@ searchNewCity.addEventListener("submit", submitCity);
 function showWeather (response) {
 document.querySelector("#date").innerHTML = formatCurrentDate(response.data.dt*1000);  
 document.querySelector("#city").innerHTML = response.data.name; 
-document.querySelector("#now-temp").innerHTML = (`${Math.round(response.data.main.temp)}°C`);
+document.querySelector("#now-temp").innerHTML = (`${Math.round(response.data.main.temp)}`);
 document.querySelector("#min-temp").innerHTML = (`${Math.round(response.data.main.temp_min)}°C`);
 document.querySelector("#max-temp").innerHTML = (`${Math.round(response.data.main.temp_max)}°C`);
 document.querySelector("#feels-like").innerHTML = (`${Math.round(response.data.main.feels_like)}°C`);
