@@ -151,20 +151,20 @@ currentButton.addEventListener("click",showCurrentPosition);
 
 function displayFahrenheitTemperature (event) {
   event.preventDefault();
-  let tempElement = document.querySelector ("now-temp");
+  let temperatureElement = document.querySelector ("now-temp");
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
 
   let fahrenheitTemperature = ((celciusTemperature*9)/5 + 32);
-  tempElement.innerHTML = Math.round (fahrenheitTemperature);
+  temperatureElement.innerHTML = Math.round (fahrenheitTemperature);
 }
 
 function displayCelciusTemperature (event) {
   event.preventDefault();
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
-  let tempElement = document.querySelector ("#now-temp");
-  tempElement.innerHTML = Math.round(celciusTemperature);
+  let temperatureElement = document.querySelector ("#now-temp");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 
 let celciusTemperature = null;
