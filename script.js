@@ -151,7 +151,7 @@ currentButton.addEventListener("click",showCurrentPosition);
 
 function displayFahrenheitTemperature (event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector ("now-temp");
+  let temperatureElement = document.querySelector ("#now-temp");
   celciusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
 
