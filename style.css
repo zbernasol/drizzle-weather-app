@@ -88,6 +88,11 @@ small p {
   top: -34px;
 }
 
+.temp-units .active {
+  cursor: default;
+  color: rgba(109, 103, 103, 0.637);
+}
+
 .weather-future {
   background: rgb(243, 195, 91);
   color: black;
