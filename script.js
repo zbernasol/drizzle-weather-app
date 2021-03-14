@@ -6,7 +6,7 @@ function formatCurrentDate (timestamp) {
   let month = months[date.getMonth()];
   let todayDate = date.getDate();
 let getDate = document.querySelector("#date");
-return (getDate.innerHTML = (`${day} ${todayDate} ${month}`));
+return (getDate.innerHTML = (`${day}, ${month} ${todayDate}`));
 }
 
 function formatHours (timestamp) {
