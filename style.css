@@ -82,6 +82,12 @@ small p {
   color: white;
 }
 
+.temp-units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
 .weather-future {
   background: rgb(243, 195, 91);
   color: black;
