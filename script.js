@@ -112,9 +112,14 @@ searchNewCity.addEventListener("submit", submitCity);
 
 
 function showWeather (response) {
+
+let temperatureElement = document.querySelector ("#now-temp");
+celciusTemperature = response.data.main.temp;
+temperatureElement.innerHTML = Math.round (celciusTemperature);
+
+
 document.querySelector("#date").innerHTML = formatCurrentDate(response.data.dt*1000);  
-document.querySelector("#city").innerHTML = response.data.name; 
-document.querySelector("#now-temp").innerHTML = (`${Math.round(response.data.main.temp)}`);
+document.querySelector("#city").innerHTML = response.data.name;
 document.querySelector("#min-temp").innerHTML = (`${Math.round(response.data.main.temp_min)}°C`);
 document.querySelector("#max-temp").innerHTML = (`${Math.round(response.data.main.temp_max)}°C`);
 document.querySelector("#feels-like").innerHTML = (`${Math.round(response.data.main.feels_like)}°C`);
@@ -150,7 +155,7 @@ function displayFahrenheitTemperature (event) {
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
 
-  let fahrenheitTemperature = ((Math.round(response.data.main.temp)*9)/5 + 32);
+  let fahrenheitTemperature = ((celciusTemperature*9)/5 + 32);
   tempElement.innerHTML = Math.round (fahrenheitTemperature);
 }
 
@@ -159,8 +164,10 @@ function displayCelciusTemperature (event) {
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
   let tempElement = document.querySelector ("#now-temp");
-  tempElement.innerHTML = Math.round(response.data.main.temp);
+  tempElement.innerHTML = Math.round(celciusTemperature);
 }
+
+let celciusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener ("click", displayFahrenheitTemperature);
